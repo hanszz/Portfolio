@@ -1,5 +1,4 @@
 body{
-	height:2000px;
 	background-color:rgb(240,240,240);
 }
 .header-color{
@@ -19,7 +18,7 @@ body{
 	.left{
 		padding:1em;
 		padding-top: 2em;
-		a{
+		a {
 			color:white;
 		}
 		@media only screen and (min-width: 40em) {
@@ -28,11 +27,14 @@ body{
 		}	
 	}
 	.right{
-		ul{
+		ul {
 			width:100%;
 			padding-left: 0;
 			margin-left: 0;
-			// background-color: #D1523D;
+			background-color: #D1523D;
+			@media only screen and (min-width: 40em) {
+				background-color: #EC5840;
+			}
 			li{
 				color:white;
 				a {
