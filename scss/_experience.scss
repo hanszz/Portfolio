@@ -1,0 +1,104 @@
+.button.company{
+	margin-top: 1em;
+	&.opower{
+		background-color: $e-bill-color;
+		transition: all .2s ease-out;
+		&:hover{
+			background-color: darken($e-bill-color,10%);
+		}
+	}
+	&.kareo{
+		background-color: $facesheet-color;
+		transition: all .2s ease-out;
+		&:hover{
+			background-color: darken($facesheet-color,10%);
+		}
+	}
+	&.moment{
+		background-color: $surveyor-color;
+		transition: all .2s ease-out;
+		&:hover{
+			background-color: darken($surveyor-color,10%);
+		}
+	}
+	&.mayo{
+		background-color: darken($e-bill-color,5%);
+		transition: all .2s ease-out;
+		&:hover{
+			background-color: darken($e-bill-color,15%);
+		}
+	}
+
+}
+.resume-container{
+	position: relative;
+	top:-40px;
+	@media only screen and (min-width: 60.063em){
+		top:-80px;
+	}
+
+}
+.resume-card{
+	@extend .project-card;
+	transition: none;
+	margin-top: 1em;
+	padding: 1em;
+	border-top:3px solid $light-gray;
+	&:hover{
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.09);
+		-ms-transform: translateY(0px); /* IE 9 */
+		-webkit-transform: translateY(0px); /* Safari */
+		transform: translateY(0px);
+		cursor: default;
+	}
+	h1{
+		color:$dark-gray;
+		font-size: 1.5em;
+		font-weight: 600;
+		margin-top: 0;
+	}
+	h2{
+		color:$medium-gray;
+		font-weight: 400;
+		text-shadow: none;
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+	&.opower{
+		border-color: $e-bill-color;
+	}
+	&.moment{
+		border-color: $surveyor-color;
+	}
+	&.kareo{
+		border-color: $facesheet-color;
+	}
+	&.mayo{
+		border-color: darken($e-bill-color,5%);
+	}
+	.p-header{
+		color:$medium-gray;
+	}
+	p{
+		margin-top: .5em;
+		margin-bottom: 0;
+	}
+}
+.contact-container{
+	position: relative;
+	top:-20px;
+	@media only screen and (min-width: 60.063em){
+		top:-40px;
+	}
+
+}
+.contact-card{
+	@extend .resume-card;
+	height:100px;
+	max-height: 100px;
+	min-height: 100px;
+	h1{
+		font-size: 1.25em;
+		margin-top: .25em;
+	}
+}
