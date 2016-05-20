@@ -8,7 +8,13 @@ body{
 	background-size: 15%;
 	background-repeat: tile;
 	@media only screen and (max-width: 40em) {
+		height:1900px;
+	 }
+	 @media only screen and (min-width: 768px) {
 		height:1200px;
+	 }
+	 @media only screen and (min-width: 1000px) {
+		height:600px;
 	 }
 	 &.sml{
 	 	height:550px;

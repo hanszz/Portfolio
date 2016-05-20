@@ -73,3 +73,54 @@
 	animation-delay:1.6s;
 
 }
+@-webkit-keyframes scaleIn { from { transform:translateY(100px) scale(0);  opacity:0; } to { transform:translateY(0px) scale(1); opacity:1; } }
+@-moz-keyframes scaleIn { from { transform:translateY(100px) scale(0); opacity:0; } to { transform:translateY(0px) scale(1); opacity:1; } }
+@keyframes scaleIn { from { transform:translateY(100px) scale(0); opacity:0; } to { transform:translateY(0px) scale(1); opacity:1; } }
+.scale-in{
+	transform:translateY(100px) scale(0);
+	opacity: 0;
+	-webkit-animation:scaleIn cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:scaleIn cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+	animation:scaleIn cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:.6s;
+	-moz-animation-duration:.6s;
+	animation-duration:.6s;
+
+	-webkit-animation-delay: .8s;
+	-moz-animation-delay:.8s;
+	animation-delay:.8s;
+
+}
+.scale-in-one{
+	@extend .scale-in;
+	-webkit-animation-delay: .9s;
+	-moz-animation-delay:.9s;
+	animation-delay:.9s;
+
+}
+.scale-in-two{
+	@extend .scale-in;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay:1s;
+	animation-delay:1s;
+
+}
+.scale-in-three{
+	@extend .scale-in;
+	-webkit-animation-delay: 1.1s;
+	-moz-animation-delay:1.1s;
+	animation-delay:1.1s;
+
+}
+.scale-in-four{
+	@extend .scale-in;
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay:1.2s;
+	animation-delay:1.2s;
+
+}

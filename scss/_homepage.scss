@@ -11,10 +11,14 @@
 .illustration-container{
 	position: relative;
 	margin-top: 1em;
-	top:-550px;
+	top:-1250px;
 	@media only screen and (min-width: 40em) {
-		top:-80px;
+		top:-160px;
+
 	}
+	@media only screen and (min-width: 768px) {
+		top: -750px;
+	 }
 	@media only screen and (min-width: 64.063em) {
 		top: -200px;
 	 }
@@ -25,17 +29,48 @@
 	 	text-align: center;
 	 }
 	 .skill{
-	 	background-image: url(http://www.placehold.it/500x500);
-	 	min-height: 200px;
-	 	margin-bottom: 1em;
+	 	background-image: url('../img/illustrationTest.png');
+	 	min-height: 300px;
+	 	min-width: 300px;
+	 	margin-bottom: 0;
+	 	background-position: center;
+	 	background-size: 300px;
+	 	background-repeat: no-repeat;
+
+	 	@media only screen and (min-width: 40em) {
+	 		background-size: 80%;
+	 		height:300px;
+	 		margin-bottom: 1em;
+	 	}
+
+	 	@media only screen and (min-width: 64.063em) {
+	 		background-size:99%;
+	 		height:250px;
+	 	 }
+	 	&.research{
+	 		background-image: url('../img/illustrationTest.png');
+	 	}
+	 	&.iteration{
+	 		background-image: url('../img/iteration.png');
+	 	}
+	 	&.visual{
+	 		background-image: url('../img/visual.png');
+	 	}
+	 	&.prototype{
+	 		background-image: url('../img/prototype.png');
+	 	}
 	 }
 }
 .content-container{
 	position: relative;
-	top:-550px;
+	top:-1200px;
 	@media only screen and (min-width: 40.063em) {
 		top: -100px;
 	 }
+	 @media only screen and (min-width: 768px) {
+		top: -600px;
+	 }
+
 	@media only screen and (min-width: 64.063em) {
 		top: -200px;
 	 }
