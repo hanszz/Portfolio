@@ -49,3 +49,16 @@ jQuery('#portfolio-demo').slippry({
   // slideshow
   auto: false
 });
+var heightToggle = 0
+$( document ).ready(function() {
+    $( "a.right" ).click(function() {
+    if (heightToggle == 0){
+    	$('.top-bar-subtle').css( "height", "300" );
+    	heightToggle = 1;
+    }else{
+    	$('.top-bar-subtle').css( "height", "60" );
+    	heightToggle = 0;
+    }
+    
+	});
+});
