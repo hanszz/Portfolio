@@ -1,0 +1,230 @@
+
+.top-bar{
+	background-color: #EC5840;
+	width:100%;
+	position: relative;
+	.left{
+		padding:1em;
+		padding-top: 2em;
+		a {
+			color:white;
+			
+		}
+		@media only screen and (min-width: 40em) {
+			display: inline-block;
+			float: left;
+		}	
+	}
+	.right{
+		ul {
+			width:100%;
+			padding-left: 0;
+			margin-left: 0;
+			background-color: #D1523D;
+			@media only screen and (min-width: 40em) {
+				background-color: #EC5840;
+			}
+			li{
+
+				color:white;
+				a {
+					color:white;
+				}
+				&.active{
+					font-weight: bold;
+				}
+				display: inline-block;
+				width:100%;
+				text-decoration: none;	
+				padding: 1em;
+				border-bottom: 1px solid #EC5840;
+				span {
+					color:#FFBBB0;
+					position: relative;
+					transition: all .2s ease-in;
+					&:before{
+					  content: "";
+					  position: absolute;
+					  width: 100%;
+					  height: 3.3px;
+					  bottom: -18.8px;
+					  left: 0;
+					  background-color: white;
+					  visibility: hidden;
+					  -webkit-transform: scaleX(0);
+					  transform: scaleX(0);
+					  // transform-origin: left;
+					  -webkit-transition: all 0.2s ease-in-out 0s;
+					  transition: all 0.2s ease-in-out 0s;
+					}
+					
+
+			}
+			
+			&:hover{
+				span{
+					color:white;
+					&:before{
+						visibility: visible;
+						-webkit-transform: scaleX(1);
+						transform: scaleX(1);
+					}
+				}
+			}
+		}
+			
+		}
+		@media only screen and (min-width: 40em) {
+		display: inline-block;
+		float: right;
+		ul{
+			width:100%;
+			display: inline-block;
+			// margin-left: 2em;
+			padding: 2em;
+			position: relative;
+
+			li{
+				display: inline;
+				border-bottom: 0px solid #EC5840;
+				&.active{
+					border-bottom: 3px solid white;
+				}
+
+			}
+		}
+	}
+	}
+}
+
+.top-bar-subtle{
+	width:100%;
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+	height:60px;
+	z-index: 9999;
+	//to Show Links on Mobile
+	transition: all .4s ease-in;
+	// height: 255px;
+	.left{
+		padding:1em;
+		padding-top: 1em;
+		background-color: white;
+		.right {
+			float: right;
+			position: relative;
+			top: -23px;
+			@media only screen and (min-width: 40em) {
+			display: none;
+				}
+
+		}
+		a {
+			color:$dark-gray;
+			padding:1.5em;
+			
+		}
+		
+		@media only screen and (min-width: 40em) {
+			display: inline-block;
+			float: left;
+		}	
+	}
+	.right{
+		ul {
+			width:100%;
+			padding-left: 0;
+			margin-left: 0;
+			background-color: #D1523D;
+			@media only screen and (min-width: 40em) {
+				background-color: white;
+			}
+			@media only screen and (max-width: 40em) {
+				padding-bottom: 4em;
+
+			}
+			li{
+				&.first{
+					@media only screen and (max-width: 40em) {
+						padding-top: 0;
+					}
+				}
+	
+				color:$primary-color;
+				@media only screen and (max-width: 40em) {
+					color:white;
+				}
+				a {
+					color:$primary-color;
+
+				}
+				&.active{
+					font-weight: bold;
+				}
+				display: inline-block;
+				width:100%;
+				text-decoration: none;	
+				padding: 1em;
+				padding-bottom: 8px;
+				border-bottom: 1px solid #EC5840;
+				span {
+					color:$dark-gray;
+					position: relative;
+					transition: all .2s ease-in;
+					@media only screen and (max-width: 40em) {
+						color:rgba(255,255,255,.9);
+					}
+					&:before{
+					  content: "";
+					  position: absolute;
+					  width: 100%;
+					  height: 3.3px;
+					  bottom: -10.8px;
+					  left: 0;
+					  background-color: $primary-color;
+					  visibility: hidden;
+					  -webkit-transform: scaleX(0);
+					  transform: scaleX(0);
+					  // transform-origin: left;
+					  -webkit-transition: all 0.2s ease-in-out 0s;
+					  transition: all 0.2s ease-in-out 0s;
+
+					}
+				
+			}
+			&:hover{
+				span{
+					color:white;
+					&:before{
+						visibility: visible;
+						-webkit-transform: scaleX(1);
+						transform: scaleX(1);
+					}
+				}
+			}
+		}
+			
+		}
+		@media only screen and (min-width: 40em) {
+		display: inline-block;
+		float: right;
+		ul{
+			width:100%;
+			display: inline-block;
+			// margin-left: 2em;
+			padding: 1em;
+			position: relative;
+
+			li{
+				display: inline;
+				border-bottom: 0px solid #EC5840;
+				&.active{
+					border-bottom: 3px solid $primary-color;
+				}
+
+			}
+		}
+	}
+	}
+}
