@@ -8,7 +8,6 @@
 		padding-top: 2em;
 		a {
 			color:white;
-			
 		}
 		@media only screen and (min-width: 40em) {
 			display: inline-block;
@@ -125,6 +124,7 @@
 			padding:1.5em;
 			
 		}
+
 		
 		@media only screen and (min-width: 40em) {
 			display: inline-block;
@@ -196,6 +196,9 @@
 			&:hover{
 				span{
 					color:white;
+					@media only screen and (min-width: 40em) {
+						color:$primary-color;
+					}
 					&:before{
 						visibility: visible;
 						-webkit-transform: scaleX(1);
