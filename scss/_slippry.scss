@@ -213,12 +213,20 @@
     z-index: 33; }
     .sy-controls li.sy-prev {
       left: 0;
-      top: 0; }
+      top: 0; 
+        @media only screen and (min-width: 40.063em){
+        left: -60px;
+        }
+      }
       .sy-controls li.sy-prev a:after {
         background-position: -5% 0; }
     .sy-controls li.sy-next {
       right: 0;
-      top: 0; }
+      top: 0; 
+      @media only screen and (min-width: 40.063em){
+        right: -60px;
+        }
+      }
       .sy-controls li.sy-next a:after {
         background-position: 105% 0; }
     .sy-controls li a {

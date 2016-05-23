@@ -1,0 +1,156 @@
+.project-page{
+	background-color: white;
+}
+.hero-image{
+	width:100%;
+	min-height:400px;
+	height: 400px;
+	background-color: $light-gray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 3em;
+	@media only screen and (min-width: 40.063em){
+			height:600px;
+		}
+	&.e-bill{
+		background-color: $e-bill-color;
+		background-image: url(../img/e-bill/ebill_mockup.png);
+		background-size: 120%;
+
+		@media only screen and (min-width: 40.063em){
+			background-size: 85%;
+			background-size: contain;
+			background-position: center 40px;
+		}
+	}
+}
+
+.article{
+	@extend .small-12;
+	@extend .medium-8;
+	@extend .medium-offset-2;
+	@extend .columns;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+.p-title-container{
+	margin-bottom: 4em;
+}
+.p-title{
+	font-weight: 800;
+	font-size: 2em;
+	&.e-bill{
+		color:$e-bill-color;
+	}
+}
+.p-subtitle{
+	font-weight: 400;
+	font-size: 2em;
+	color: $medium-gray;
+}
+.p-company{
+	font-weight: 400;
+	font-size: 1em;
+	color:$medium-gray;
+}
+.p-link{
+	&.ebill{
+		color:$e-bill-color;
+	}
+}
+.p-article-header{
+	font-size: 2em;
+	font-weight: 800;
+}
+.p-article-subheader{
+	font-size: 1.5em;
+	font-weight: 400;
+	color:$medium-gray;
+}
+
+
+
+.intro-section{
+	width: 100%;
+	height:370px;
+	margin-bottom: 4em;
+	@media only screen and (min-width: 40.063em){
+		height: 270px;
+
+	}
+	background-color: $light-gray;
+	&.e-bill{
+		@media only screen and (min-width: 40.063em){
+			background-color: $e-bill-color;
+		}
+	}
+
+}
+
+.p-intro-item{
+		@extend .small-12;
+		@extend .medium-4;
+		@extend .columns;
+		.card{
+			background-color: white;
+			border-radius: 5px;
+			margin-top: .5em;
+			padding: .5em;
+			margin-bottom: .5em;
+			
+			@media only screen and (min-width: 40.063em){
+				padding:1em;
+				margin-top: 3em;
+				min-height: 160px;
+			}
+			h3{
+				font-size: 1.5em;
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+		}
+}
+
+.p-text-half-column{
+	@extend .small-12;
+	@extend .medium-6;
+	@extend .columns;
+	padding-left: 0;
+	margin-top: 1em;
+}
+
+.p-color-bg{
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding:2em;
+	color:white;
+	background-color: $light-gray;
+	&.e-bill{
+		background-color: $e-bill-color;
+	}
+	.p-color-section-text{
+		@extend .small-12;
+		@extend .medium-8;
+		@extend .columns;
+		padding: 0;
+		h1{
+			font-weight: 800;
+			font-size: 1.5em;
+		}
+	}
+}
+
+.external-captions{
+	margin-top: -5px;
+	transition: all .3s ease-out;
+	h1{
+		font-weight: 600;
+		font-size: 2em;
+
+	}
+}
+
+
+

@@ -1,12 +1,24 @@
-/* Portfolio */
-.portfolio .sy-controls {
+/* ebill */
+.ebill-slider .sy-controls {
   display: block;
 }
-.portfolio .sy-pager {
+.ebill-slider .sy-pager {
   margin: 1.5em 0;
 }
-.portfolio .external-captions {
+.ebill-slider .external-captions {
   background-color: #fff;
   padding: 1em;
   margin-top: 1.5em;
+}
+
+.ebill-slider{
+	h1{
+		color:$dark-gray;
+		font-weight: 800;
+		font-size: 1.5em;
+	}
+	p{
+		color:$dark-gray;
+		
+	}
 }
