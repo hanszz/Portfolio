@@ -52,6 +52,11 @@ jQuery('#ebill-slider').slippry({
 
 var heightToggle = 0
 $( document ).ready(function() {
+    $(function() {
+    $("img.lazy").lazyload({
+        
+    });
+
 
     $( "a.right" ).click(function() {
     if (heightToggle == 0){
@@ -63,5 +68,6 @@ $( document ).ready(function() {
     }
 
     
+});
 	});
 });
