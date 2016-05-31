@@ -1,4 +1,9 @@
+
+
+
+
 $(document).foundation();
+
 
 
 //Image Gallery//
@@ -35,6 +40,46 @@ jQuery('#ebill-slider').slippry({
 
   // options
   adaptiveHeight: false, // height of the sliders adapts to current slide
+  start: 'random', // num (starting from 1), random
+  loop: false, // first -> last & last -> first arrows
+  captionsSrc: 'li',
+  captions: 'custom', // Position: overlay, below, custom, false
+  captionsEl: '.external-captions',
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  easing: 'linear', // easing to use in the animation [(see... [jquery www])]
+  continuous: false,
+
+  // slideshow
+  auto: false
+});
+jQuery('#iteration-slider').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box iteration-slider" />', // wrapper to wrap everything, including pager
+
+  // options
+  adaptiveHeight: true, // height of the sliders adapts to current slide
+  start: 'random', // num (starting from 1), random
+  loop: false, // first -> last & last -> first arrows
+  captionsSrc: 'li',
+  captions: 'custom', // Position: overlay, below, custom, false
+  captionsEl: '.external-captions',
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  easing: 'linear', // easing to use in the animation [(see... [jquery www])]
+  continuous: false,
+
+  // slideshow
+  auto: false
+});
+jQuery('#final-slider').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box final-slider" />', // wrapper to wrap everything, including pager
+
+  // options
+  adaptiveHeight: true, // height of the sliders adapts to current slide
   start: 'random', // num (starting from 1), random
   loop: false, // first -> last & last -> first arrows
   captionsSrc: 'li',

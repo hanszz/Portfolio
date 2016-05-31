@@ -22,3 +22,57 @@
 		
 	}
 }
+
+
+.iteration-slider .sy-controls {
+  display: block;
+}
+.iteration-slider .sy-pager {
+  margin: 1.5em 0;
+}
+.iteration-slider .external-captions {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1.5em;
+}
+
+.iteration-slider{
+	h1{
+		color:$dark-gray;
+		font-weight: 800;
+		font-size: 1.5em;
+	}
+	p{
+		color:$dark-gray;
+		
+	}
+}
+.final-slider .sy-controls {
+  display: block;
+}
+.final-slider .sy-pager {
+  margin: 1.5em 0;
+}
+.final-slider .external-captions {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1.5em;
+}
+
+.final-slider{
+	li{
+		div{
+			h1{
+				color:$dark-gray;
+				font-weight: 800;
+				font-size: 1.5em;
+			}
+			p{
+				color:$dark-gray;
+				
+			}
+		}
+		
+	}
+	
+}
