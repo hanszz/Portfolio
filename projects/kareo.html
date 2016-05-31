@@ -5,51 +5,261 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design by Hansz</title>
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="../css/app.css">
 </head>
-<body>
+<body class="project-page">
 <div class="white-top">
   <div class="row ">
     <nav class="top-bar-subtle">
       <div class="left">
-        <a href="#">Ryan Hansz</a>
+        <a href="../index.html">Ryan Hansz</a>
         <a class="right" href="#">Menu</a>
       </div>
       <div class="right">
         <ul>
-          <li class="active first">Work</li>
-          <a href="experience.html"><li><span>Experience</span></li></a>
-          <a href="#"><li><span>Sketchbook</span></li></a>
-          <a href="contact.html"><li><span>Contact</span></li></a>
+          <a href="../index.html"><li><span>Work</span></li></a>
+          <a href="../experience.html"><li><span>Experience</span></li></a>
+          <a target="blank" href="http://ryehands.tumblr.com/"><li><span>Sketchbook</span></li></a>
+          <a href="../contact.html"><li><span>Contact</span></li></a>
         </ul>
       </div>
     </nav>
-    </div>
+  </div>
+</div>
+
+
+  <div class="hero-image kareo margin-top fade-in">
   </div>
   <div class="container margin-top">
-  	
-  	<div class="row">
-  		<div class="small-12 medium-8 medium-offset-2 columns">
-  			
-  			<ul id="portfolio-demo">
-  			    <li title="This is caption 1 <a href='#link'>Even with links!</a>">
-  			      <a href="#slide1"><img src="http://placehold.it/500x500" alt="demo1_1"></a>
-  			    </li>
-  			    <li title="This is caption 2">
-  			      <a href="#slide2"><img src="http://placehold.it/500x500"  alt="demo1_2"></a>
-  			    </li>
-  			    <li title="And this is some very long caption for slide 3. Yes, really long.">
-  			      <a href="#slide3"><img src="http://placehold.it/500x500" alt="demo1_3"></a>
-  			    </li>
-  			    <li title="And this is some very long caption for slide 4.">
-  			      <a href="#slide4"><img src="http://placehold.it/500x500" alt="demo1_4"></a>
-  			    </li>
-  			</ul>
-  			<div class="external-captions"></div>
+    <div class="row">
+      <div class="article move-in-one">
+        <div class="p-title-container">
+          <h1 class='p-title kareo'>
+            Kareo Facesheet Redesign
+          </h1>
+          <h2 class='p-subtitle'>
+            How can our medical records better represent the story of our health?
+          </h2>
+          <h3 class='p-company'>
+            This concept was designed during my internship at <a href="http://kareo.com">Kareo</a>
+          </h3>
+        </div>
+      </div>
+    </div>
 
-		</div>
-	</div>
+    <div class="intro-section ">
+      <div class="row">
+        <div class="p-intro-item">
+          <div class="card">
+            <h3>Problem</h3>
+            <p>The current facesheet does not provide medical care providers with useful, actionable data about the patients they treat.</p>
+          </div>
+        </div>
+        <div class="p-intro-item">
+          <div class="card">
+            <h3>Approach</h3>
+            <p>Design a summary of a patient's medical story that better serves common use cases.</p>
+          </div>
+        </div>
+        <div class="p-intro-item">
+          <div class="card">
+            <h3>Outcome</h3>
+            <p>An interactive prototype using Kareo's front-end UI kit.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- End Intro Section -->
+
+
+
+    <div class="row">
+      <div class="article">
+        <h1 class="p-article-header">Existing Facesheet
+        </h1>
+        <h2 class='p-article-subheader'>
+          Understanding the current state of the facesheet.
+        </h2>
+        <p class="margin-top-med">
+          <b>Serves as a Landing Page</b></br>
+          The facesheet is the first page shown every time a medical record is opened.
+        </p>
+        <p>
+          <b>Summarizes Patient Data</b></br>
+          From drugs to medical history, the facesheet attempts to give an idea of everything going on with a patient.
+        </p>
+        <p>
+          <b>Launches into other actions</b></br>
+          The facesheet provides links to every action that can be taken on a patient's medical record.
+        </p>
+    </div>
+      <img class="shadow" src="../img/kareo/Current_Facesheet.png">
+    </div>
+    <div class="row margin-top-med">
+      <div class="article">
+        <h1 class="p-article-header">Research
+        </h1>
+        <h2 class='p-article-subheader'>
+           Understanding how the different facesheet users expect it to behave.
+        </h2>
+        <img src="../img/kareo/users.png">
+        <p>
+          <b>Medical Providers</b><br>
+          These are people almost universally crunched for time, and struggle to keep up to date on their patient's relevant data while keeping to their punishing schedules. Currently, the data in the facesheet is nothing more than a collection of data that isn't connected to any problems the patient deals with. This makes reviewing the facesheet data a time-consuming process and many providers skip the facesheet and review patient visit notes.<br>
+          <b>Providers need an actionable, easy to review home for their patients' medical data.</b>
+        </p>
+        <p>
+          <b>Medical Assistants</b><br>
+          Most of the data entered about patients vitals, history, medications and other health information is gathered and entered by medical assistants or nurses. The current process is extremely time consuming and mindless, and wastes both the talents of the medical assitants and the short time frame of the visit.<br>
+          <b>Medical Assistants need a smoother process to enter and review data in the facesheet.</b>
+        </p>
+        <p>
+          <b>Patients</b><br>
+          Although patients rarely see the facesheet itself, patient involvement in medical records is increasing, with messages to their providers, tracking health information, reviewing their history and sometimes entering their own data.<br>
+          <b>The facesheet should be built to be understood by patients. The presentation of the facesheet should adapt to patients' issues and data.</b>
+        </p>
+
+      </div>
+
+    </div>  
+
+    <div class="p-color-bg kareo">
+      <div class="row">
+        <div class="article">
+          <div class="p-color-section-text full-width">
+            
+            <p>Research Summary</p>
+            <h1>
+              Current Facesheet designs try to be all things to all users, and end up not being as useful as they could be for anyone.
+            </h1>
+            </div>    
+          </div>   
+        </div>
+      </div>
+      <!-- End Color BG -->
+      <div class="row margin-top-med">
+        <div class="article">
+          <h1 class="p-article-header">Ideation
+          </h1>
+          <h2 class='p-article-subheader'>
+              Using common clinical workflows to focus the redesign.
+          </h2>
+        </div>
+      </div>
+      <img class= "lazy margin-top" data-original="../img/kareo/workflow.png">
+      <div class="row margin-top">
+        <div class="article">
+        <p><b>First Round - Easing Data Entry</b></br>
+          One of the assumptions I made early in the project was that the data entry portion of the visit (Intake) was the main use of the facesheet. Early sketching and prototyping focused mostly on making the process of entering data into the facesheet a more seamless process, and did not address the information hierarchy as much. </p>
+          <img class="lazy" data-original="../img/kareo/sketch.jpg">
+        </div>
+      </div>
+      <div class="row margin-top">
+        <div class="article">
+        <p><b>Second Round - Focusing on the Patient's Story</b></br>
+          Through interviewing and testing, I discovered my assumption about how the facesheet was used was wrong. The clinical workflow typically involves entering all of the data in a Visit Note, which accumulates during the visit. With this discovery, the facesheet needed to take a new direction that would be most useful. I researched the idea of a problem focused medical record, one that puts the patient's issues as the most important organizing principle.
+        </p>
+          <img class="lazy" data-original="../img/kareo/sketch2.jpg">
+        </div>
+      </div>
+
+      <div class="row margin-top">
+        <div class="article">
+          <h1 class="p-article-header">Prototyping the Concept
+          </h1>
+          <h2 class='p-article-subheader'>
+              Translating the design to Kareo's interaction patterns and UI kit.
+          </h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <img class="lazy text-center" data-original="../img/kareo/Pages.gif">
+      </div>
+
+
+      <div class="row margin-top">
+          <!-- <div class="small-12 medium-6 columns margin-top">
+            <div class="external-captions"></div>
+          </div>  -->    
+          <div class="small-12 medium-12 columns margin-top">
+            <ul id="ebill-slider">
+              <li title="worksheet">
+                <a href="#slide3">
+                </a>
+                <div class="large-12 columns text-center">
+                  <h1>Problems</h1>
+                  <p>Patients come to medical providers to solve problems, so the facesheet should center around them.</p>
+                </div>
+                <div class="large-12 columns">
+                  <img src="../img/kareo/problems.png" alt="problems">
+                </div>
+
+              </li>
+              <li title="worksheet">
+                <a href="#slide3">
+                </a>
+                <div class="large-12 columns text-center">
+                  <h1>Problem - Expanded</h1>
+                  <p>Providing an at a glance summary of what's being done about a problem.</p>
+                </div>
+                <div class="large-12 columns">
+                  <img src="../img/kareo/problem_ex.png" alt="problems">
+                </div>
+
+              </li>
+              <li title="worksheet">
+                <a href="#slide3">
+                </a>
+                <div class="large-12 columns text-center">
+                  <h1>Facesheet</h1>
+                  <p>Giving hierarchy to the recorded data about a patient.</p>
+                </div>
+                <div class="large-12 columns">
+                  <img src="../img/kareo/facesheet.png" alt="facesheet">
+                </div>
+
+              </li>
+              <li title="worksheet">
+                <a href="#slide3">
+                </a>
+                <div class="large-12 columns text-center">
+                  <h1>Notes</h1>
+                  <p>Notes are the documents of record for a medical visit, so the facesheet needs to allow easy access.
+                </div>
+                <div class="large-12 columns">
+                  <img src="../img/kareo/notes.png" alt="problems">
+                </div>
+              </li>
+              <li title="worksheet">
+                <a href="#slide3">
+                </a>
+                <div class="large-12 columns text-center">
+                  <h1>Note - Expanded</h1>
+                  <p>Allowing readers to get an idea of what's been done in past visits.
+                </div>
+                <div class="large-12 columns">
+                  <img src="../img/kareo/note_ex.png" alt="problems">
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      
+
+
+
   </div>
+  <!-- END CONTAINER -->
+
+
+
+
+
+
+
+
+
   <footer>
    <div class="container">
      <div class="row">
@@ -58,17 +268,17 @@
        Get in touch @ <a href="#"> ryhansz1@gmail.com</a></p>
      </div>
      <div class="small-12 medium-6 columns">
-       <img src="img/computer.png"/>
+       <img src="../img/computer.png"/>
      </div>
    </div>
    </footer>
 
 
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/what-input/what-input.js"></script>
-  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-  <script src="js/jquery.lazyload.js"></script>
-  <script src="js/slippry.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/what-input/what-input.js"></script>
+  <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="../js/jquery.lazyload.js"></script>
+  <script src="../js/slippry.min.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>
