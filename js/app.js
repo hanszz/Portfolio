@@ -99,7 +99,8 @@ var heightToggle = 0
 $( document ).ready(function() {
     $(function() {
     $("img.lazy").lazyload({
-        
+        threshold : 400,
+        effect: 'fadeIn'
     });
 
 

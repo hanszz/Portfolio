@@ -13,6 +13,13 @@
 	@media only screen and (min-width: 40.063em){
 			height:600px;
 		}
+	&.tips{
+		background-color: $tip-color;
+		background-image: url(../img/tips/AllTips_Sml-33.png);
+		background-size: contain;
+		background-repeat: repeat;
+
+	}
 	&.e-bill{
 		background-color: $e-bill-color;
 		background-image: url(../img/e-bill/ebill_mockup.png);
@@ -26,7 +33,7 @@
 	}
 	&.stressit{
 		background-color: $stressit-color;
-		background-image: url(../img/stressit/stressitHero-01.png);
+		background-image: url(../img/stressit/StressitHero-01.png);
 		background-size: 160%;
 
 		@media only screen and (min-width: 40.063em){
@@ -78,6 +85,9 @@
 	&.surveyor{
 		color:$surveyor-color;
 	}
+	&.tips{
+		color:$tip-color;
+	}
 }
 .p-subtitle{
 	font-weight: 400;
@@ -122,6 +132,11 @@
 	&.e-bill{
 		@media only screen and (min-width: 40.063em){
 			background-color: $e-bill-color;
+		}
+	}
+	&.tip-bg{
+		@media only screen and (min-width: 40.063em){
+			background-color: $tip-color;
 		}
 	}
 
@@ -233,6 +248,9 @@
 	width:100%;
 	padding-bottom: 2em;
 	margin-bottom: 0;
+}
+.tips{
+	color: $tip-color;
 }
 
 

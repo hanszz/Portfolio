@@ -114,7 +114,8 @@
 			float: right;
 			position: relative;
 			top: -23px;
-			@media only screen and (min-width: 40em) {
+			left: -10px;
+			@media only screen and (min-width: 800px) {
 			display: none;
 				}
 
@@ -126,7 +127,7 @@
 		}
 
 		
-		@media only screen and (min-width: 40em) {
+		@media only screen and (min-width: 800px) {
 			display: inline-block;
 			float: left;
 		}	
@@ -137,22 +138,22 @@
 			padding-left: 0;
 			margin-left: 0;
 			background-color: #D1523D;
-			@media only screen and (min-width: 40em) {
+			@media only screen and (min-width: 800px) {
 				background-color: white;
 			}
-			@media only screen and (max-width: 40em) {
+			@media only screen and (max-width: 800px) {
 				padding-bottom: 4em;
 
 			}
 			li{
 				&.first{
-					@media only screen and (max-width: 40em) {
+					@media only screen and (max-width: 800px) {
 						padding-top: 0;
 					}
 				}
 	
 				color:$primary-color;
-				@media only screen and (max-width: 40em) {
+				@media only screen and (max-width: 800px) {
 					color:white;
 				}
 				a {
@@ -172,7 +173,7 @@
 					color:$dark-gray;
 					position: relative;
 					transition: all .2s ease-in;
-					@media only screen and (max-width: 40em) {
+					@media only screen and (max-width: 800px) {
 						color:rgba(255,255,255,.9);
 					}
 					&:before{
@@ -196,7 +197,7 @@
 			&:hover{
 				span{
 					color:white;
-					@media only screen and (min-width: 40em) {
+					@media only screen and (min-width: 800px) {
 						color:$primary-color;
 					}
 					&:before{
@@ -209,7 +210,7 @@
 		}
 			
 		}
-		@media only screen and (min-width: 40em) {
+		@media only screen and (min-width: 800px) {
 		display: inline-block;
 		float: right;
 		ul{

@@ -7,24 +7,34 @@
 	margin-top: 2em;
 	
 }
-
+.skill-container{
+	@extend .small-6;
+	@extend .large-3;
+	@extend .medium-3;
+	@extend .columns;
+	padding-bottom: 0;
+	margin-bottom: 1em;
+}
 .illustration-container{
 	position: relative;
 	margin-top: 1em;
-	top:-1250px;
-	@media only screen and (min-width: 374px) {
-		top: -1342px;
-	}
-	@media only screen and (min-width: 40em) {
-		top:-160px;
+	// top:-1250px;
+	// @media only screen and (min-width: 200px) {
+	// 	top: -394px;
+	// }
+	// @media only screen and (min-width: 374px) {
+	// 	top: -448px;
+	// }
+	// @media only screen and (min-width: 40em) {
+	// 	top:-160px;
 
-	}
-	@media only screen and (min-width: 768px) {
-		top: -750px;
-	 }
-	@media only screen and (min-width: 64.063em) {
-		top: -200px;
-	 }
+	// }
+	// @media only screen and (min-width: 768px) {
+	// 	top: -750px;
+	//  }
+	// @media only screen and (min-width: 64.063em) {
+	// 	top: -200px;
+	//  }
 	 h3{
 	 	text-transform: uppercase;
 	 	color:white;
@@ -33,21 +43,18 @@
 	 }
 	 .skill{
 	 	background-image: url('../img/illustrationTest.png');
-	 	min-height: 300px;
-	 	min-width: 300px;
+	 	height: 150px;
 	 	margin-bottom: 0;
 	 	background-position: center;
-	 	background-size: 300px;
+	 	background-size: contain;
 	 	background-repeat: no-repeat;
 
 	 	@media only screen and (min-width: 40em) {
-	 		background-size: 80%;
 	 		height:300px;
 	 		margin-bottom: 1em;
 	 	}
 
 	 	@media only screen and (min-width: 64.063em) {
-	 		background-size:99%;
 	 		height:250px;
 	 	 }
 	 	&.research{
@@ -66,17 +73,17 @@
 }
 .content-container{
 	position: relative;
-	top:-1200px;
-	@media only screen and (min-width: 40.063em) {
-		top: -100px;
-	 }
-	 @media only screen and (min-width: 768px) {
-		top: -600px;
-	 }
+	// top:-350px;
+	// @media only screen and (min-width: 40.063em) {
+	// 	top: -100px;
+	//  }
+	//  @media only screen and (min-width: 767px) {
+	// 	top: -680px;
+	//  }
 
-	@media only screen and (min-width: 64.063em) {
-		top: -200px;
-	 }
+	// @media only screen and (min-width: 64.063em) {
+	// 	top: -200px;
+	//  }
 
 }
 .featured-project {
@@ -222,7 +229,7 @@
 		}
 	}
 	&.facesheet{
-		background-image: url('../img/facesheet/kareo.png');
+		background-image: url('../img/kareo/kareo.png');
 		background-color:$facesheet-color;
 		background-size: cover;
 		background-position:  center bottom;
