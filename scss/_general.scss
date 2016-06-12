@@ -68,3 +68,35 @@ body{
 		color: $primary-color;
 	}
 }
+
+
+// BACK TO TOP STYLES //
+.back-to-top {
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	width: 70px;
+	height: 70px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: $light-gray;
+	transition: all .2s ease-out;
+	svg{
+		width: 70%;
+		position: relative;
+		top: 8px;
+		left: 10px;
+	}
+	&:hover{
+		background-color: $primary-color;
+		svg path{
+			fill: white;
+		}
+
+	}
+ 
+}
