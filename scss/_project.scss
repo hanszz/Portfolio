@@ -57,6 +57,16 @@
 		}
 
 	}
+	&.sketchbook{
+		background-color: $surveyor-color;
+		background-image: url(../img/sketchbook/cover.jpg);
+		background-size: cover;
+		background-position: center center;
+		@media only screen and (min-width: 1400px){
+			background-size: cover;
+		}
+
+	}
 }
 
 .article{
